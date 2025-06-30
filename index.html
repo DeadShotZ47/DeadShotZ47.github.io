@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ข้อมูลส่วนตัว</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #e1bee7);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            max-width: 900px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .profile-img {
+            flex: 1;
+            background-color: #f3f3f3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .profile-img img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .info {
+            flex: 2;
+            padding: 30px;
+        }
+
+        .info h2 {
+            margin: 0 0 20px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .info strong {
+            display: inline-block;
+            width: 140px;
+            color: #555;
+        }
+
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+            }
+            .profile-img {
+                padding: 40px 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="profile-img">
+                <img src="He just like me fr.jpg" alt="รูปโปรไฟล์">
+            </div>
+            <div class="info">
+                <h2>My Profile</h2>
+                <p><strong>ชื่อ-นามสกุล :</strong> สินสมุทร ขุนพิมูล</p>
+                <p><strong>สาขา :</strong> วิทยาการคอมพิวเตอร์และสารสนเทศ</p>
+                <p><strong>รหัสนักศึกษา :</strong> 663450310-9</p>
+                <p><strong>อีเมล :</strong> <a href="mailto:sinsamut.k@kkumail.com">sinsamut.k@kkumail.com</a></p>
+                <p><strong>Facebook :</strong> <a href="https://www.facebook.com/sinsamut.khunphimool.3/" target="_blank">Sinsamut Khunphimool</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
